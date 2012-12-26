@@ -1,9 +1,9 @@
 import datetime
 
-from django.contrib.auth.models import User
 from django.db import models, IntegrityError
 from django.template.defaultfilters import slugify
 from django.utils.translation import ugettext_lazy as _
+from .compat import User
 
 
 class Metric(models.Model):
